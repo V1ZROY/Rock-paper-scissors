@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div id="announcer"></div>
-    <div>
-        <div id="player"></div>
-        <div id="computer"></div>
+    <div id="announcer">
+        <h2>Announcer</h2>
+    </div>
+    <div id="game">
+        <div id="player" class="hand">
+            <h2>Player</h2>
+            <p id="playerchoice">####</p>
+        </div>
+        <div id="computer" class="hand">
+            <h2>Computer</h2>
+            <p id="computerchoice">####</p>
+        </div>
     </div>
 </body>
 </html>
