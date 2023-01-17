@@ -12,34 +12,62 @@ body * {
     flex-direction: column;
 }
 
+body {
+    height: 100%;
+}
+
+#rockpaperscissors {
+    background-color: #1b9aaa;
+    align-items: center;
+    justify-content: center;
+}
+
+#scoreboard{
+    margin: 50px;
+    flex-direction: row;
+    width: 30vw;
+    background-color: #ef476f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
 #playbutton {
-    width: 40vw;
-    height: 20vh;
+    background-color: #06d6a0;
+    width: 20vw;
+    height: 10vh;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
     font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     justify-content: center;
     align-items: center;
-    align-self: center;
-    justify-self: center;
+    font-size: large;
 }
 
-
-#announcer {
-    background-color: bisque;
+#playbutton:hover {
+    background-color: #29f9c1;
 }
+
 
 #game {
     flex-direction: row;
+    height: 100%;
 }
 
 .hand {
-    height: 70vh;
+    height: 100%;
 }
 
 #player {
-    background-color: blueviolet;
+    background-color: #f8ffe5;
 }
 
 #computer {
-    background-color: grey;
+    background-color: #ffc43d;
 }
