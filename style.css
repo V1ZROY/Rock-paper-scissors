@@ -8,7 +8,6 @@ body * {
     text-align: center;
     width: 100%;
     display: flex;
-    flex: auto;
     flex-direction: column;
 }
 
@@ -16,23 +15,14 @@ body {
     height: 100%;
 }
 
+h2 {
+    margin-top: 20px;
+}
+
 #rockpaperscissors {
     background-color: #1b9aaa;
     align-items: center;
     justify-content: center;
-}
-
-#scoreboard{
-    margin: 50px;
-    flex-direction: row;
-    width: 30vw;
-    background-color: #ef476f;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-h2 {
-    margin-top: 20px;
 }
 
 #playbutton {
@@ -54,6 +44,42 @@ h2 {
     background-color: #29f9c1;
 }
 
+#scoreboard{
+    margin: 50px;
+    flex-direction: row;
+    width: 30vw;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#weapon_selection {
+    background-color: #e5e5f7;
+}
+
+#weapons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    padding: 3% 0% 3%;
+}
+
+#weapons > button {
+    width: 10%;
+    height: 80%; 
+    border-radius: 10px;
+    border: none;
+    font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+#weapons > button:hover {
+    background-color: antiquewhite;
+}
 
 #game {
     flex-direction: row;
