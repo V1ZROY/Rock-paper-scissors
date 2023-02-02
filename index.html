@@ -9,8 +9,30 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div id="rockpaperscissors">
-        <h2>Rock, Paper, Scissors!</h2>
+    
+    <div id="arena">
+        <h2>Choose Your Fighter!</h2>
+        <div id="weapons">
+            <button id="choose_rock">Rock</button>
+            <button id="choose_paper">Paper</button>
+            <button id="choose_scissors">Scissors</button>
+        </div>
+        <div id="game">
+            <div id="computer" class="hand">
+                <h2>Computer</h2>
+                <p id="computerchoice">####</p>
+            </div>
+            <div id="player" class="hand">
+                <h2>Player</h2>
+                <p id="playerchoice">####</p>
+            </div>
+
+        </div>
+    </div>
+    <div id="sidebar">
+        <div id="announcer">
+            <h2>Brokemon Battle</h2>
+        </div>
         <table id="scoreboard">
             <thead>
                 <th>Player wins</th>
@@ -24,23 +46,6 @@
             </tr>
         </table>
     </div>
-    <div id="weapon_selection">
-        <h2>Choose Your Weapon!</h2>
-        <div id="weapons">
-            <button id="choose_rock">Rock</button>
-            <button id="choose_paper">Paper</button>
-            <button id="choose_scissors">Scissors</button>
-        </div>
-    </div>
-    <div id="game">
-        <div id="player" class="hand">
-            <h2>Player</h2>
-            <p id="playerchoice">####</p>
-        </div>
-        <div id="computer" class="hand">
-            <h2>Computer</h2>
-            <p id="computerchoice">####</p>
-        </div>
-    </div>
+
 </body>
 </html>

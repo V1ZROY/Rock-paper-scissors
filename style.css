@@ -3,53 +3,57 @@
 }
 
 body * {
-    margin: 0;
+    margin: auto;
     font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    color: white;
+    border-radius: 5px;
 }
 
 body {
+    position: relative;
     height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 h2 {
     margin-top: 20px;
 }
 
-#rockpaperscissors {
-    background-color: #1b9aaa;
+#arena {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-grow: 4;
+    width: auto;
+    height: 90%;
+    margin: 1%;
+    background-image: url(./images/V1_pokemon_style_arena_e39f401e-c2e0-4455-9bf9-29ed226e5770.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: top;
 }
-
-#playbutton {
-    background-color: #06d6a0;
-    width: 20vw;
-    height: 10vh;
-    margin: 50px;
-    padding: 20px;
-    border-radius: 10px;
-    border: none;
-    font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    justify-content: center;
+#sidebar {
+    flex-direction: column;
+    flex-grow: 1;
     align-items: center;
-    font-size: large;
-}
-
-#playbutton:hover {
-    background-color: #29f9c1;
+    height: 90%;
+    margin: 1%;
 }
 
 #scoreboard{
-    margin: 50px;
+    margin: 5%;
     flex-direction: row;
-    width: 30vw;
+    width: 80%;
     background-color: red;
-    padding: 20px;
+    padding: 5%;
     border-radius: 10px;
 }
 
@@ -68,7 +72,6 @@ h2 {
 #weapons > button {
     width: 10%;
     height: 80%; 
-    border-radius: 10px;
     border: none;
     font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
@@ -82,7 +85,7 @@ h2 {
 }
 
 #game {
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -91,7 +94,7 @@ h2 {
 }
 
 #player {
-    background-color: #f8ffe5;
+    background-color: #eae5ff;
 }
 
 #computer {
