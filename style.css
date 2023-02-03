@@ -60,7 +60,7 @@ h2 {
 #weapons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     height: 10vh;
     padding: 3% 0% 3%;
 }
@@ -75,6 +75,8 @@ h2 {
     justify-content: center;
     align-items: center;
     font-size: large;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 #weapons > button:hover {
