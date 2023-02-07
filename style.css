@@ -23,27 +23,31 @@ body {
 }
 
 h2 {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 #arena {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 4;
-    width: auto;
-    height: 90%;
+    display: grid;
+    width: 720px;
+    height: 720px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     margin: 1%;
     background-image: url(./images/V1_pokemon_style_arena_e39f401e-c2e0-4455-9bf9-29ed226e5770.png);
-    background-position-x: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: top;
+    background-size: cover;
 }
+
+.side {
+    display: block;
+    width: 100%;
+    height: 360px;
+}
+
 #sidebar {
     flex-direction: column;
-    flex-grow: 1;
-    align-items: center;
+    align-items: top;
     height: 90%;
     margin: 1%;
 }
@@ -61,17 +65,18 @@ h2 {
     background-color: #e5e5f7;
 }
 
-#weapons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 10vh;
-    padding: 3% 0% 3%;
+.weapons {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-#weapons > button {
-    width: 10%;
-    height: 80%; 
+.weapons > button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    border-radius: 100%;
     border: none;
     font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
@@ -80,23 +85,72 @@ h2 {
     font-size: large;
 }
 
-#weapons > button:hover {
-    background-color: antiquewhite;
+.weapons > button:hover {
+    transform: scale(1.1);
 }
 
-#game {
-    flex-direction: column;
-    height: 100%;
+#computerchoiceone {
+    bottom: 14%;
+    left: 21%;
+    background-image: url(./images/fire_one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.hand {
-    height: 100%;
+#computerchoicetwo {
+    bottom: 32%;
+    left: 45%;
+    background-image: url(./images/water_one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#computerchoicethree {
+    bottom: 14%;
+    right: 21%;
+    background-image: url(./images/grass_one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.playerchoiceone {
+    left: 21%;
+    background-image: url(./images/water_two.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.playerchoicetwo {
+    top: 26%;
+    left: 45%;
+    background-image: url(./images/grass_two.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.playerchoicethree {
+    right: 21%;
+    background-image: url(./images/fire_two.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.selected {
+    width: 100%
+    border-radius: 0px;
+}
+
 
 #player {
-    background-color: #eae5ff;
+    /* background-color: rgba(255, 99, 71, 0.3); */
 }
 
 #computer {
-    background-color: #ffc43d;
+    /* background-color: rgba(255, 165, 0, 0.3); */
 }

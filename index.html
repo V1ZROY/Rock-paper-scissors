@@ -9,24 +9,24 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
     <div id="arena">
-        <h2>Choose Your Fighter!</h2>
-        <div id="weapons">
-            <button id="choose_rock">Rock</button>
-            <button id="choose_paper">Paper</button>
-            <button id="choose_scissors">Scissors</button>
+        <div id="computer" class="side">
+            <h2>Computer</h2>
+            <div class="weapons">
+                <button id="computerchoiceone"></button>
+                <button id="computerchoicetwo"></button>
+                <button id="computerchoicethree"></button>
+            </div>
+            <p id="computerchoice">####</p>
         </div>
-        <div id="game">
-            <div id="computer" class="hand">
-                <h2>Computer</h2>
-                <p id="computerchoice">####</p>
+        <div id="player" class="side">
+            <h2>Player</h2>
+            <div class="weapons">
+                <button id="playerchoiceone"></button>
+                <button id="playerchoicetwo"></button>
+                <button id="playerchoicethree"></button>
             </div>
-            <div id="player" class="hand">
-                <h2>Player</h2>
-                <p id="playerchoice">####</p>
-            </div>
-
+            <p id="playerchoice">####</p>
         </div>
     </div>
     <div id="sidebar">
